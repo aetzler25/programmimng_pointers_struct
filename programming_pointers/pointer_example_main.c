@@ -28,7 +28,7 @@ int main(void)
 
     // Example 2: pointers to different types
 
-    unsigned int a = 0x00112233;
+    unsigned int a = 0x00112233; //The 0x in the front of this number says that this is a Hex value
     unsigned short b = 0x4455;
     printf("%x\n",a);
     printf("%x\n",sizeof(a)); // Finds the size of the variable a in Bytes
