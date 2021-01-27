@@ -31,7 +31,7 @@ int main(void)
     unsigned int a = 0x00112233;
     unsigned short b = 0x4455;
     printf("%x\n",a);
-    printf("%x\n",sizeof(a));
+    printf("%x\n",sizeof(a)); // Finds the size of the variable a in Bytes
     printf("%x\n",&a);
 
     printf("%x\n",b);
