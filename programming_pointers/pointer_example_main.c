@@ -80,12 +80,14 @@ int main(void)
     // Example 4: having fun with pointers and arithmetic operations on them
     // You can also learn about Big-endian little-endian. Read about it here: https://en.wikipedia.org/wiki/Endianness Which one is MSP432? Big or little endian?
     unsigned int N = 0x11223344;
-    unsigned char *Nptr = &N;  //There will be a warning here. Why?
+    unsigned char *Nptr = (unsigned char *) &N;  //There will be a warning here. Why?
     printf("%02x\n",*Nptr);
 
     for (i = 0; i<4; i++)
        printf("%02x\n",*(Nptr+i));
 
+    unsigned long long M[2] = {0x1122334455667788, 0xaabbccddeeff0011};
+    unsigned long long *Mptr = M+1;
 
     while (1);
 }
